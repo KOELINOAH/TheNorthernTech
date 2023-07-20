@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noah Koeli &#8211; Beckham</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <style>
+    footer {
+      background-color: rgba(77, 60, 208, 0.92);
+    }
+    nav{
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+	background:#d24bab;
+  position: sticky;
+  top: 0;
+
+  padding: 5px 10px;
+ 
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 20px;
+    font-family:cursive;
+}
+
+ul li {
+float:left;
+margin-top:0px;
+padding: 0px;
+width:130px;
+
+}
+a:hover{
+
+background: hsl(60, 14%, 97%);
+}
+ul li ul {
+background:hsl(140, 7%, 65%);
+width:100px;
+
+
+}
+
+ul li ul{
+display:none;
+}
+ul li:hover ul{
+display:block;
+}
+button{
+float:left;
+background:rgb(215, 122, 8);
+color:#080706;
+border-radius:4px;
+
+}
+#slideshow {
+      width: 60%;
+      position: relative;
+    }
+
+    #slideshow img {
+      width: 80%;
+      height: 100%;
+      display: none;
+    }
+   
+        
+</style>
+</head>
+
+<body style="background-color:rgba(206, 200, 200, 0.963)">
+<nav>
+  
+    <div class="nav container mx-auto">
+      <div class="logo">
+        <h1><b><i>NLK PORTFOLIO</i> |koelinoah@gmail.com|  +254 743 446 339|</h1>
+    </div>
+        
+          
+      <ul>
+       <li> <a href="#" class="text-blue-800 hover:text-red-800 font-bold">HOME</a></li>
+       <li><a href="#" class="text-red-800 hover:text-blue-800 font-bold">About me</a></li>
+       <li><a href="#" class="text-red-800 hover:text-blue-700 font-bold">MY SKILLS</a>
+        <ul> 
+            <li><a href="#" class="text-green-800 hover:text-blue-700 font-bold"> ● Front End Developer</a></li>
+            <li><a href="#" class="text-green-800 hover:text-blue-700 font-bold"> ● Python Programming</a></li>
+            <li><a href="#" class="text-green-800 hover:text-blue-700 font-bold"> ● R Programming</a></li>
+            <li><a href="#" class="text-green-800 hover:text-blue-700 font-bold"> ● Power BI</a></li>
+            <li><a href="#" class="text-green-800 hover:text-blue-700 font-bold"> ● Ms Office</a></li>
+          
+        </ul>
+        </li>
+        <li><a href="#" class="text-black-800 hover:text-green-800 font-bold">Let's Talk</a></li>
+    </ul>
+  
+
+    </div>
+    </nav>
+  
+    <div class="container mx-auto py-10">
+      <div class="flex items-top">
+        <div class="w-3/4 text-black hover:text-blue-600">
+            <h2 class="text-3xl font-semibold">NOAH LOTOME KOELI</h2>
+            <b><p class="text-xl mt-4"> < The CODER > </p></b>
+            <p class="text-xl mt-4"> I am a Front-end focused Web Developer who writes Clean, elegant and high quality code using HTML, CSS and JavaScript. I am an expert in the area of responsive design and I strive to make the web a beautiful place with every line of code. </p>
+          </div>
+          
+          
+        <div class="w-1/2">
+          <div id="slideshow">
+            <center>
+          <img src="C:/Users/noah.koeli/Downloads/n1.jpg" alt="My Picture" class="rounded-full w-80 h-90">
+          <img src="C:/Users/noah.koeli/Downloads/n2.jpg" alt="My Picture" class="rounded-full w-80 h-90">
+        </center>
+        </div>
+        </div>
+       
+        <script>
+         
+          var slideIndex = 0;
+          var slides = document.getElementsByTagName('img');
+         
+      
+          function showSlides() {
+            for (var i = 0; i < slides.length; i++) {
+              slides[i].style.display = 'none';
+         
+            }
+            slideIndex = (slideIndex + 1) % slides.length;
+            slides[slideIndex].style.display = 'block';
+           
+            setTimeout(showSlides, 2000); 
+          }
+      
+          showSlides();
+        </script>
+        
+      </div>
+    </div>
+  </header>
+
+ 
+
+  
+  <footer class="maroon-bg text-white py-10">
+    <div class="container mx-auto text-center hover:text-black font-bold">
+      <p>&copy; 2023 Noah Lotome Koeli. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  
+
+</body>
+
+</html>
